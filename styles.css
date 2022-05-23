@@ -151,6 +151,7 @@ footer {
     }
 
     main {
+        max-width: 900px;
         margin-top: auto;
         display: flex;
         flex-direction: row;
@@ -160,7 +161,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        height: 70vh;
+        height: 65vh;
     }
 
     main div button {
