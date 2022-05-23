@@ -1,0 +1,176 @@
+
+/*   RESET   */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*   VARIABLES   */
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/*   TYPOGRAPHY   */
+
+body {
+    font-family: 'Lexend Deca', sans-serif;;
+    font-size: 15px;
+    color: var(--transparent-white);
+}
+
+h2 {
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.8rem;
+}
+
+main p {
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.sedans button {
+    color: var(--bright-orange);
+}
+
+.suvs button {
+    color: var(--dark-cyan);
+}
+
+.luxury button {
+    color: var(--very-dark-cyan);
+}
+
+footer {
+    color: black;
+}
+
+/*   LAYOUT   */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em;
+}
+
+main {
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main div {
+    padding: 2.5em;
+}
+
+main, 
+footer {
+    margin-top: auto;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+main img {
+    width: 70px;
+    margin-top: 1em;
+}
+
+h2 {
+    margin: 0.7em 0;
+}
+
+main p {
+    line-height: 1.6rem;
+}
+
+button {
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+    border: none;
+    padding: 1em 2.2em;
+    border-radius: 50px;
+    background-color: var(--very-light-gray);
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+footer {
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*   MEDIA QUERIES   */
+
+@media (min-width: 650px) {
+    
+    body {
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 70vh;
+    }
+
+    main div button {
+        width: 150px;
+        margin-top: auto;
+        padding: 1em 0.1em; 
+        display: inline-block;       
+    }
+
+    footer {
+        margin-top: auto;
+    }
+}
